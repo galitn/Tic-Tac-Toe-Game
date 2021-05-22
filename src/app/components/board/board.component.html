@@ -1,0 +1,13 @@
+<div class="status" *ngIf="winner != ''">
+    {{'Winner is: ' + winner   }} 
+</div>
+<div class="status" *ngIf="winner === ''">
+    {{isXPlayer ? 'Current Player: X' : 'Current Player: O'}}
+
+</div>
+<button class="new-game-btn"  mat-raised-button color="accent" (click)="onStartNewGameClicked()">Start New Game</button>
+<div class="board-wrapper">
+        <app-square *ngFor="let square of squares; let idx  = index" [square]="square" (squareClicked)="onSquareClicked(idx)"></app-square>
+
+</div>
+

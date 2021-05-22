@@ -1,0 +1,15 @@
+.status{
+    font-size: 20px;
+}
+.board-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 300px;
+}
+app-square{
+    height: 100px;
+    width: 100px;
+}
+.new-game-btn{
+    margin: 10px 0;
+}
